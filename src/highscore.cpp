@@ -355,7 +355,7 @@ void HighscoreList::draw(bool nameAlterable, bool highlightLast) {
 
 void HighscoreList::finishEntry() {
 	if (entries->at(idxLastInsertedEntry)->getPlayerNameLength() == 0)
-		entries->at(idxLastInsertedEntry)->setPlayerName("Pacman");  // default name if none has been entered
+		entries->at(idxLastInsertedEntry)->setPlayerName("Lokiman");  // default name if none has been entered
 	if (sfPlayerNames[idxLastInsertedEntry]) {
 		SDL_FreeSurface(sfPlayerNames[idxLastInsertedEntry]);
 		sfPlayerNames[idxLastInsertedEntry] = NULL;  // has to be updated when drawn next time

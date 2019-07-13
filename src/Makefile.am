@@ -2,7 +2,7 @@
 
 ## Created by Anjuta
 
-AM_CPPFLAGS = \
+AM_CPPFLAGS = -I/usr/include/SDL2\
 	-DPACKAGE_LOCALE_DIR=\""$(localedir)"\" \
 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
 	-DPACKAGE_DATA_DIR=\""$(pkgdatadir)"\"
@@ -21,6 +21,8 @@ pacman_SOURCES =  \
 	figur.h \
 	game.cpp \
 	game.h \
+	gamecontroller.cpp \
+	gamecontroller.h \
 	ghost_figur.cpp \
 	ghost_figur.h \
 	pacman.cpp \

@@ -11,7 +11,7 @@ FunnyAnimation::FunnyAnimation():
 		animScore400  = Screen::getTextSurface(Screen::getSmallFont(), "400",    Constants::WHITE_COLOR);
 		animScore800  = Screen::getTextSurface(Screen::getSmallFont(), "800",    Constants::WHITE_COLOR);
 		animScore1600 = Screen::getTextSurface(Screen::getSmallFont(), "1600",   Constants::WHITE_COLOR);
-		pacmanName    = Screen::getTextSurface(Screen::getLargeFont(), "Pacman", Constants::YELLOW_COLOR);
+		pacmanName    = Screen::getTextSurface(Screen::getLargeFont(), "Lokiman", Constants::YELLOW_COLOR);
 		blinkyName    = Screen::getTextSurface(Screen::getLargeFont(), "Blinky", Constants::BLINKY_COLOR);
 		pinkyName     = Screen::getTextSurface(Screen::getLargeFont(), "Pinky",  Constants::PINKY_COLOR);
 		inkyName      = Screen::getTextSurface(Screen::getLargeFont(), "Inky",   Constants::INKY_COLOR);

@@ -19,8 +19,8 @@ MenuMain::MenuMain() {
 		SDL_Surface *icon = Screen::loadImage("gfx/pacman_desktop.png", 0);
 		SDL_SetWindowIcon(Screen::getInstance()->getWindow(), icon);
 		SDL_FreeSurface(icon);
-		appTitle1 = Screen::getTextSurface(Screen::getHugeFont(), "Pa", Constants::WHITE_COLOR);
-		appTitle2 = Screen::getTextSurface(Screen::getHugeFont(), "man", Constants::WHITE_COLOR);
+		appTitle1 = Screen::getTextSurface(Screen::getHugeFont(), "Lo", Constants::WHITE_COLOR);
+		appTitle2 = Screen::getTextSurface(Screen::getHugeFont(), "iman", Constants::WHITE_COLOR);
 		titlePacman = Screen::loadImage("gfx/title_pacman.png", 0);
 		std::string str_version = "version ";
 		str_version.append(VERSION);
@@ -61,6 +61,7 @@ void MenuMain::drawTitle() {
 }
 
 int MenuMain::show() {
+	GameController::getInstance()->searchAndOpen();
 	draw();
 	int event;
 	while(!(event = eventloop())) {
